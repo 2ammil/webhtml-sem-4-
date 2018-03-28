@@ -1,0 +1,89 @@
+<html>
+<head>
+<title> ORDER FORM </title>
+<script type="text/javascript">
+function submit1()
+{
+var r=confirm("Are you Sure?");
+if (r==true)
+{
+document.forms['form'].submit();
+var y=confirm("You want to print?");
+if (y==true)
+{
+window.print();
+}
+alert("You Detail have be Submited!!!!");
+window.location = "frame1.html";
+}
+};
+</script>
+</head>
+<body bgcolor="#FFE87C">
+<center><b><font size=6> ORDER FORM </font></b></center>
+<br><br>
+<center>
+<table border=0 width=90%>
+<tr>
+<td>
+<form name="form" method="post" action="mailto:order_product@lenovo.com" enctype="text/plain">
+NAME:<br>
+<input type="text" name="Name" SIZE="60"><br><br>
+NO.IC:<br>
+<input type="text" name="Ic" SIZE="60"><br><br>
+
+ADDRESS:<br>
+<textarea name="address" Rows=8 Cols=60>
+</textarea><br><br>
+
+TELEPHONE:<br>
+<input type="text" Name="Tel" SIZE="40"><br><br>
+MOBILE:<br>
+<input type="text" name="mobile" SIZE="40"><br><br>
+EMAIL:<br>
+<input type="text" name="email" SIZE="50"><br><br>
+PRODUCT:<br>
+<input type="checkbox" NAME="product1" value="U">U-Series<br>
+<input type="checkbox" NAME="product2" value="G">G-Series<br>
+<input type="checkbox" NAME="product3" value="Y">Y-Series<br>
+<input type="checkbox" NAME="product4" value="Z">Z-Series<br>
+<br>
+Payment:<br>
+<select name="Payment" size=1>
+<option value="VISA">VISA</option>
+<option value="Mastercard">MasterCard</option>
+<option value="Mepscash">MepsCash</option>
+</select><BR><br>
+Card Holder's Name:<br>
+<input type="text" name="CHname" size=60><br><br>
+Credit Card No.:<br>
+<input type="text" name="CCno" size=40><br><br>
+CCV:<input type="password" name="CCV" size=5><br><br>
+Expiry Date:<br>
+<select name="Month" size=1>
+<option value="JANUARY">JANUARY</option>
+<option value="FEBUARY">FEBUARY</option>
+<option value="MARCH">MARCH</option>
+<option value="APRIL">APRIL</option>
+<option value="MAY">MAY</option>
+<option value="JUNE">JUNE</option>
+<option value="JULY">JULY</option>
+<option value="AUGUST">AUGUST</option>
+<option value="SEPTEMBER">SEPTEMBER</option>
+<option value="OCTOBER">OCTOBER</option>
+<option value="NOVEMBER">NOVEMBER</option>
+<option value="DECEMBER">DECEMBER</option>
+</select>
+<input type="text" name="year" size=10 maxlength=4><br><br>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<center>
+<a STYLE="cursor: pointer" target="_top" onclick="submit1()" ><img src="img/Submit.png" border=0></a>
+<a href="Buy.html" target="_top"><img src="img/Reset.png" border=0></a>
+<a href="frame1.html" target="_top"><img src="img/Cancel.png" border=0></a>
+</center>
+</body>
+</html>
